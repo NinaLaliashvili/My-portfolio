@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
+
+.header {
+  position: relative;
+  text-align: center;
+  color: white;
+  background: url("https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+    no-repeat top center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+
+.header-text {
+  position: relative;
+  top: 45%;
+  z-index: 1;
+  font-size: 3em;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.header-text1 {
+  position: relative;
+  top: 50%;
+  z-index: 1;
+  font-size: 1.8em;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.arrow-link {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.down-arrow {
+  transition: transform 0.3s;
+}
+
+.arrow-link:hover .down-arrow {
+  transform: translateY(10px);
+}

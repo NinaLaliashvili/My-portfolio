@@ -1,0 +1,83 @@
+#experience {
+  background-color: #597b9e;
+  color: #ecf0f1;
+  padding: 40px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#experience .header-text {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 40px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#experience .header-text p {
+  letter-spacing: 2px;
+}
+
+#experience .sections-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+#experience .section {
+  font-family: "Roboto Condensed", sans-serif;
+  width: 45%;
+}
+
+#experience .icons img {
+  font-family: "Roboto Condensed", sans-serif;
+  width: 80px;
+  height: auto;
+  margin: 0 20px;
+  margin-top: 30px;
+}
+.section1 {
+  font-family: "Roboto Condensed", sans-serif;
+  margin-left: -20px;
+}
+.section2 {
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 1.2px;
+  margin-right: 10%;
+}
+.pp {
+  font-size: 0.7em;
+  margin-bottom: 50px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+#experience .header-text h2 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.tec {
+  margin-left: 30px;
+  letter-spacing: 1.2px;
+}
+.header-text {
+  border-bottom: 1px solid white;
+}
+
+#experience .icons1 img {
+  font-family: "Roboto Condensed", sans-serif;
+  width: 120px;
+  height: auto;
+  margin: 0 10px;
+  margin-top: 30px;
+}
+.nasa {
+  width: 300px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

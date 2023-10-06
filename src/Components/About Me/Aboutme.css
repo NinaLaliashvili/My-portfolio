@@ -1,0 +1,96 @@
+.aboutme-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.intro-container,
+.bio-container,
+.abilities-container {
+  width: 90%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.intro-title,
+.abilities-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #333;
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 2px;
+}
+
+.portrait {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.bio-text {
+  font-size: 1.2em;
+  color: #333;
+  line-height: 1.6;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.abilities-container {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.abilities-card {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.ability {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.ability-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 10%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ability-text {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.atag {
+  text-decoration: none;
+  color: #6423fd;
+  font-style: italic;
+}
+.atag:hover {
+  color: #626262;
+}
