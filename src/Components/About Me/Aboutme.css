@@ -94,3 +94,44 @@
 .atag:hover {
   color: #626262;
 }
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .aboutme-section {
+    width: 90%;
+  }
+
+  .intro-title,
+  .abilities-title {
+    font-size: 1.8em;
+  }
+
+  .portrait {
+    width: 150px;
+    height: 150px;
+  }
+
+  .bio-text {
+    font-size: 1.3em;
+  }
+
+  .abilities-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ability {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+  }
+
+  .ability-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .ability-text {
+    font-size: 1em;
+  }
+}

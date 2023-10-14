@@ -50,3 +50,43 @@ li {
     0 0 150px #ff80e1;
   cursor: pointer;
 }
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  height: 50px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.burger div {
+  width: 25px;
+  height: 5px;
+  background-color: #fff;
+  margin: 2px;
+  transition: all 0.3s;
+  margin-top: 5px;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+  ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  ul.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+}

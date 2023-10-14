@@ -222,3 +222,31 @@
 .modal button.close-button:hover {
   background-color: #aa0000;
 }
+
+@media (max-width: 768px) {
+  #projects .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  #projects .card {
+    width: 90% !important;
+  }
+
+  #projects .image-container img {
+    width: 100% !important;
+    height: auto;
+  }
+
+  #projects .modal {
+    width: 95% !important;
+    max-height: 90vh;
+  }
+
+  #projects .modal img {
+    max-width: 100% !important;
+  }
+  #projects .overlay {
+    pointer-events: none;
+    opacity: 0 !important;
+  }
+}

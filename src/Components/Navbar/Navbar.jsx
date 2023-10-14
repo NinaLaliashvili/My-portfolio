@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import "./Navbar.css";
 
 function Navbar() {
+  const [menuActive, setMenuActive] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
   return (
     <nav className="navbar">
-      <ul>
+      <ul className={menuActive ? "active" : ""}>
         <li>
           <Link to="aboutme" smooth={true} className="nav-link custom-link">
             About Me
@@ -32,6 +38,12 @@ function Navbar() {
           </Link>
         </li>
       </ul>
+
+      <div className="burger" onClick={toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </nav>
   );
 }
