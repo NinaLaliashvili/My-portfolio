@@ -57,3 +57,9 @@
 .arrow-link:hover .down-arrow {
   transform: translateY(10px);
 }
+
+@media (max-width: 768px) {
+  .header {
+    background-image: url("https://images.pexels.com/photos/2387417/pexels-photo-2387417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  }
+}
