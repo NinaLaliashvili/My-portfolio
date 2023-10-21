@@ -1,0 +1,48 @@
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.code-editor {
+  font-family: "Courier New", monospace;
+  color: #b050fa;
+  font-size: 1.5em;
+  border-radius: 5px;
+  background-color: #2e2e2e;
+  padding: 40px 60px;
+  box-shadow: 0px 0px 15px #9450fa;
+  font-weight: 600;
+}
+
+.cursor {
+  background-color: #b050fa;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    visibility: hidden;
+  }
+  50%,
+  100% {
+    visibility: visible;
+  }
+}
+
+@media (max-width: 768px) {
+  .code-editor {
+    font-size: 1.2em;
+    padding: 20px 30px;
+    width: 80%;
+    font-weight: 600;
+  }
+}

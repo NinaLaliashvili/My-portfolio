@@ -6,7 +6,10 @@ import "./Header.css";
 function Header() {
   return (
     <div className="header">
-      <div className="header-text">Hello, I am Nini Laliashvili</div>
+      <div className="header-text">
+        {" "}
+        &lt;/ Hello, I am Nini Laliashvili &gt;{" "}
+      </div>
       <div className="header-text1">Full stack web developer.</div>
       <Link
         to="aboutme"

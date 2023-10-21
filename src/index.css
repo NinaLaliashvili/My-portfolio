@@ -1,0 +1,44 @@
+.custom-cursor {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  font-size: 19px;
+  font-weight: bold;
+  color: #6200ff;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid #6200ff;
+  border-radius: 100%;
+  padding: 3px;
+}
+
+.custom-cursor::before {
+  content: "</>";
+  margin: 5px;
+}
+
+@keyframes blinkingCursor {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+body.hovering-element .custom-cursor {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+
+  .custom-cursor {
+    display: none;
+  }
+}

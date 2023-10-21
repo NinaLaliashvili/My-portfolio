@@ -10,6 +10,7 @@ import ReactCardFlip from "react-card-flip";
 
 function Aboutme() {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [isTextExpanded, setTextExpanded] = useState(false);
 
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
@@ -39,20 +40,42 @@ function Aboutme() {
         <p className="bio-text">
           Hello! I'm Nini, a full stack web developer who started the tech
           journey at the
-          <a className="atag" href="https://www.itc.tech/" target="blank">
+          <a
+            className="atag"
+            href="https://www.itc.tech/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {" "}
             Israel Tech Challenge.
-          </a>{" "}
+          </a>
           I adore coding, it's like a daily puzzle with endless solutions. Each
           code I crack unveils something new, making every day an exciting
-          challenge. But there's more to me than just code. I'm also a writer,
-          penning down my thoughts and emotions, letting them flow from my mind
-          to the paper. It’s a soothing dance of words that helps me express
-          myself. Away from the screen and paper, I’m an outdoor enthusiast. I
-          find my serenity among the towering mountains, where each hike is a
-          voyage of discovery. But, the adventure doesn’t end there. My love for
-          nature extends to its gentle creatures. I adore petting animals, their
-          simple joy and boundless love add a dash of warmth to my day.
+          challenge. But there's more to me than just code.
+          {isTextExpanded ? (
+            <>
+              I'm also a writer, penning down my thoughts and emotions, letting
+              them flow from my mind to the paper. It’s a soothing dance of
+              words that helps me express myself. Away from the screen and
+              paper, I’m an outdoor enthusiast. I find my serenity among the
+              towering mountains, where each hike is a voyage of discovery. But,
+              the adventure doesn’t end there. My love for nature extends to its
+              gentle creatures. I adore petting animals, their simple joy and
+              boundless love add a dash of warmth to my day.
+              <a className="read-more" onClick={() => setTextExpanded(false)}>
+                {" "}
+                Read less
+              </a>
+            </>
+          ) : (
+            <span>
+              ...
+              <a className="read-more" onClick={() => setTextExpanded(true)}>
+                {" "}
+                Read more
+              </a>
+            </span>
+          )}
         </p>
       </div>
 
