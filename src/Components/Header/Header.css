@@ -5,11 +5,11 @@
   text-align: center;
   color: white;
   background: url("https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
-    no-repeat top center fixed;
+    no-repeat top center;
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
 }
-
 .header::before {
   content: "";
   position: absolute;
@@ -61,5 +61,6 @@
 @media (max-width: 768px) {
   .header {
     background-image: url("https://images.pexels.com/photos/2387417/pexels-photo-2387417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-attachment: scroll;
   }
 }
