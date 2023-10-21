@@ -5,11 +5,11 @@
   z-index: 9999;
   font-size: 19px;
   font-weight: bold;
-  color: #6200ff;
+  color: #5bc0de;
   display: flex;
   align-items: center;
   background-color: transparent;
-  border: 2px solid #6200ff;
+  border: 2px solid #5bc0de;
   border-radius: 100%;
   padding: 3px;
 }
