@@ -5,7 +5,7 @@
   position: relative;
   text-align: center;
   color: white;
-  background: url("https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+  background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0F6Cer1q2Xo2VMc6Iq2aMSed529mIKymcflk36MPtK1WNl5EN6TTTOIIPZNd1h1IPq5W4TTN4E5OS_54wCP1eASA0SaMCm3QERfA_tlyr4zMDBn87sgG2QyZt3xTN1WR3zFjpKVQxShkQNmAsuo9dQQ1EFuNBd38OtAUoNu93uPV9gJzVBc2G1RSMwA/s1920/aurora-borealis-ai-landscape-1262023hd.jpg")
     no-repeat top center;
   background-size: cover;
   background-attachment: fixed;
@@ -61,7 +61,7 @@
 
 @media (max-width: 768px) {
   .header {
-    background-image: url("https://images.pexels.com/photos/2387417/pexels-photo-2387417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0F6Cer1q2Xo2VMc6Iq2aMSed529mIKymcflk36MPtK1WNl5EN6TTTOIIPZNd1h1IPq5W4TTN4E5OS_54wCP1eASA0SaMCm3QERfA_tlyr4zMDBn87sgG2QyZt3xTN1WR3zFjpKVQxShkQNmAsuo9dQQ1EFuNBd38OtAUoNu93uPV9gJzVBc2G1RSMwA/s1920/aurora-borealis-ai-landscape-1262023hd.jpg");
     background-attachment: scroll;
   }
 }

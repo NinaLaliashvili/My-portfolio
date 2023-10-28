@@ -11,6 +11,7 @@ function Footer() {
       <footer className="footer">
         <div className="contact-details">
           <p>Phone: +972 053-58-15-724</p>
+          <p>Email: ninilaliashvili8@gmail.com</p>
           <p>Location: Tel Aviv, Israel</p>
         </div>
         <div className="social-links">

@@ -28,7 +28,7 @@ function Projects() {
     {
       title: "Pet Adoption Project",
       link: "#",
-      source: "#",
+      source: "https://github.com/NinaLaliashvili/Pet-adoption.git",
       image: lalala1,
       description:
         "Embrace the journey of love and companionship with our Pet Adoption project. This user-friendly platform connects adorable pets with warm, loving homes. Explore a diverse range of pets waiting for their forever homes and find your perfect furry companion. Our intuitive interface makes pet adoption seamless and joyful, ensuring every pet finds their way to a loving haven. You can create beautiful beginnings with pets that leave paw prints on your heart!",

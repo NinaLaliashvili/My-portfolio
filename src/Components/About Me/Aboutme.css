@@ -130,3 +130,42 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
+
+.bio-container {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.terminal-window {
+  background-color: #000;
+  color: #5bc0de;
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+.cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #5bc0de;
+  }
+}

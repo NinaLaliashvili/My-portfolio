@@ -14,27 +14,27 @@ function Navbar() {
       <ul className={menuActive ? "active" : ""}>
         <li>
           <Link to="aboutme" smooth={true} className="nav-link custom-link">
-            / / About Me
+            About Me
           </Link>
         </li>
         <li>
           <Link to="experience" smooth={true} className="nav-link custom-link">
-            / / Experience
+            Experience
           </Link>
         </li>
         <li>
           <Link to="resume" smooth={true} className="nav-link custom-link">
-            / / Resume
+            Resume
           </Link>
         </li>
         <li>
           <Link to="projects" smooth={true} className="nav-link custom-link">
-            / / Projects
+            Projects
           </Link>
         </li>
         <li>
           <Link to="contact" smooth={true} className="nav-link custom-link">
-            / / Contact
+            Contact
           </Link>
         </li>
       </ul>

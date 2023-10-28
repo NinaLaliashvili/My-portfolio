@@ -45,16 +45,43 @@ function Experience() {
           </div>
         </div>
         <div className="section2">
-          <h2>My Education:</h2>
-          <div className="icons1">
-            <a href="https://iliauni.edu.ge/en/" target="blank">
-              <img src={itc} alt="" />
+          <h2 className="tec">My Education:</h2>
+          <div className="education-card">
+            <h3>Israel Tech Challenge: Fullstack Web Development</h3>
+            <p>
+              Embracing the full spectrum of web development during my time at
+              the Israel Tech Challenge.
+            </p>
+            <ul>
+              <li>
+                Completed major projects involving React, Node.js, and database
+                management, showcasing the integration of frontend and backend
+                technologies.
+              </li>
+              <li>
+                Volunteered as a mentor for newcomers, helping them transition
+                smoothly into the fast-paced tech world.
+              </li>
+              <li>
+                Collaborated in team-based hackathons, achieving commendable
+                placements in challenges centered around real-world problems.
+              </li>
+              <li>
+                Consistently participated in weekly tech talks, broadening my
+                horizon beyond the syllabus.
+              </li>
+            </ul>
+            <a href="https://www.itc.tech/" target="blank">
+              <img src={ilia} alt="Israel Tech Challenge Logo" />
             </a>
           </div>
-          <div className="icons1">
-            {" "}
-            <a href="https://www.itc.tech/" target="blank">
-              <img src={ilia} alt="" />
+
+          <div className="education-card ilia-card">
+            <h3>Ilia State University, 2016 - 2020</h3>
+            <p>Bachelor's in Psychology and Social Sciences</p>
+            <p>Honors: Dean's List for three consecutive years</p>
+            <a href="https://iliauni.edu.ge/en/" target="blank">
+              <img src={itc} alt="Ilia State University Logo" />
             </a>
           </div>
         </div>

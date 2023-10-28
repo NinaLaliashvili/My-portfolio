@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Aboutme.css";
-import { useState } from "react";
 import mypic from "../Images/mypic.jpeg";
 import mypic2 from "../Images/fox.png";
 import travel from "../Images/travel.png";
@@ -12,9 +11,39 @@ function Aboutme() {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isTextExpanded, setTextExpanded] = useState(false);
 
+  const commands = [
+    "> npm install success-in-life",
+    "Installing... Success achieved!",
+  ];
+  const [displayedText, setDisplayedText] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [charIndex, setCharIndex] = useState(0);
+
+  useEffect(() => {
+    if (currentIndex < commands.length) {
+      const timer = setTimeout(() => {
+        const updatedText = [...displayedText];
+        if (charIndex === 0) {
+          updatedText.push("");
+        }
+        updatedText[currentIndex] += commands[currentIndex][charIndex];
+        setDisplayedText(updatedText);
+
+        if (charIndex < commands[currentIndex].length - 1) {
+          setCharIndex(charIndex + 1);
+        } else {
+          setCharIndex(0);
+          setCurrentIndex(currentIndex + 1);
+        }
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [displayedText, currentIndex, charIndex]);
+
   const handleFlip = () => {
     setIsFlipped(!isFlipped);
   };
+
   return (
     <section id="aboutme" className="aboutme-section">
       <div className="intro-container">
@@ -77,6 +106,12 @@ function Aboutme() {
             </span>
           )}
         </p>
+        <div className="terminal-window">
+          {displayedText.map((txt, idx) => (
+            <p key={idx}>{txt}</p>
+          ))}
+          <span className="cursor">|</span>
+        </div>
       </div>
 
       <div className="abilities-container">
